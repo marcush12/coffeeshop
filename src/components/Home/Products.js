@@ -10,7 +10,9 @@ const getProducts = graphql`
         node {
           id
           title
+          
           price
+          
           image {
             fluid(maxHeight: 426) {
               src

@@ -17,6 +17,7 @@ export default class Menu extends Component {
     this.state = {
       items: props.items.edges,
       coffeeItems: props.items.edges,
+      coffeeProducts: props.items.edges,
       categories: getCategories(props.items.edges)
     };
   }

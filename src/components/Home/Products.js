@@ -1,8 +1,7 @@
 import React from "react";
-import Product from "./Product";
 import Title from "../Globals/Title";
 import { StaticQuery, graphql } from "gatsby";
-
+import Product from "./Product";
 const getProducts = graphql`
   {
     products: allContentfulCoffeeProduct {
@@ -10,9 +9,7 @@ const getProducts = graphql`
         node {
           id
           title
-          
           price
-          
           image {
             fluid(maxHeight: 426) {
               src
